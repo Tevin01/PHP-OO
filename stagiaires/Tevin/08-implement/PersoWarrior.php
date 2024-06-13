@@ -1,6 +1,6 @@
 <?php
 
-class PersonnageGuerrier extends PersonnageAbstract{
+class PersonnageWarrior extends PersonnageAbstract implements ActionsPersonnageInterface, PassivePersonnageInterface{
 
     // Propriétés d'un guerrier
     protected int $strength = 100;
@@ -8,11 +8,11 @@ class PersonnageGuerrier extends PersonnageAbstract{
     protected int $agility = 80;
     protected ?string $infoPersonnage;
 
-    // on a hérité du constructeur de PersonnageAbstract, on va le surcharger
+    // on a hérité du constructeur de PersoAbstract, on va le surcharger
 
     public function __construct(string $theName, string $theEspece)
     {
-        // vient de la classe parente (PersonnageAbstract)
+        // vient de la classe parente (PersoAbstract)
         parent::__construct($theName,$theEspece);
 
         // on va initialiser les valeurs du nouveau Warrior
@@ -71,7 +71,7 @@ class PersonnageGuerrier extends PersonnageAbstract{
         }
         $text .= " = $resistance<br>";
         $this->setResistance($resistance);
-        $this->setInfoPerso($text);
+        $this->setInfoPersonnage($text);
     }
 
     // initialisation de l'agilité

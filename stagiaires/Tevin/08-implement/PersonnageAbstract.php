@@ -22,7 +22,7 @@ abstract class PersonnageAbstract{
 
 
     // une méthode abstraite ne peut être privée
-    // abstract private function lulu();
+    // abstract private function Vegeta();
 
     // méthodes abstraites, elles sont déclarées dans la classe abstraite, pour obliger
     // les héritiers à redéclarer ces méthodes en public ou protected
