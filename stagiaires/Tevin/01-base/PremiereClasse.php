@@ -8,6 +8,6 @@ https://www.php.net/manual/fr/language.oop5.php
 
 On crée une classe avec le mot clef class, suivi du nom en PascalCase, puis {} */
 
-class PremiereClass {
+class PremiereClasse {
 
 }
